@@ -4,10 +4,7 @@ import React from "react";
 import { Navbar } from 'react-bootstrap';
 import Container from "react-bootstrap/Container";
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import About from "./pages/about";
-import Home from "./pages/home";
+import Main from '.';
 
 import hopelablogo from "./images/hopelablogo.jpg";
 import ksulogo from "./images/ksulogo.jpg";
@@ -41,12 +38,7 @@ function App() {
           </Navbar.Brand>
         </Container>
       </Navbar>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-        </Routes>
-      </Router>
+      <Main />
     </div>
   );
 }
