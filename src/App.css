@@ -40,15 +40,39 @@
 
 header {
   width: 100%;
-  background-color: #E7DFC6;
-  color: #7440EA;
+  background-color: #F5F6F3;
+  color: #632768;
   min-height: fit-content;
   text-align: center;
+  display: flex;
   margin: 0;
   height: 100%;
-  font-size: 300%;
+  font-size: 5.5vw;
+  padding: 0%;
 }
 
 div.header {
-  height: 50vh;
+  height: 20vh;
+  width: 100%;
+}
+
+div.title {
+  width: 70vw;
+  vertical-align: middle;
+}
+
+div.logo {
+  width: 15vw;
+}
+
+text {
+  align-items: center;
+}
+
+img.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  justify-content: left;
 }

@@ -9,12 +9,27 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from "./pages/about";
 import Home from "./pages/home";
 
+import hopelablogo from "./images/hopelablogo.jpg";
+import ksulogo from "./images/ksulogo.jpg";
+
 function App() {
   return (
     <div>
       <title>Kansas State Biorepository</title>
-      <div class='header'><header>Kansas State Biorepository</header></div>
-      <Navbar expand="lg">
+      <div class='header'>
+        <header>
+          <div class="logo">
+            <img class='logo' src={hopelablogo} alt="Hope Lab logo" />
+          </div>
+          <div class="title">
+            <text>Kansas State Biorepository</text>
+          </div>
+          <div class="logo">
+            <img class='logo' src={ksulogo} alt="KSU logo" />
+          </div>
+        </header>
+      </div>
+      <Navbar>
         <Container>
           <Navbar.Brand href="/"
             style={{ color: "green" }}>
