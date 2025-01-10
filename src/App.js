@@ -1,13 +1,14 @@
 import './App.css';
 
 import React from "react";
-import { Navbar } from 'react-bootstrap';
-import Container from "react-bootstrap/Container";
+import { Navbar, Nav } from 'react-bootstrap';
 
 import Main from '.';
 
 import hopelablogo from "./images/hopelablogo.jpg";
 import ksulogo from "./images/ksulogo.jpg";
+
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -26,18 +27,24 @@ function App() {
           </div>
         </header>
       </div>
-      <Navbar>
-        <Container>
-          <Navbar.Brand href="/"
-            style={{ color: "green" }}>
-            Home page
-          </Navbar.Brand>
-          <Navbar.Brand href="/about"
-            style={{ color: "green" }}>
-            About
-          </Navbar.Brand>
-        </Container>
+
+      <div class="goldspacer" />
+
+      <Navbar className="navbar-bg" expand="lg">
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className='ml-auto'>
+            <Nav.Link as={Link} to="/" className="nav-link">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/about" className="nav-link">
+              About
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
+
+      <div class="goldspacer" />
+
       <Main />
     </div>
   );

@@ -58,6 +58,7 @@ div.header {
 
 div.title {
   width: 70vw;
+  margin-top: 2vh;
   vertical-align: middle;
 }
 
@@ -73,6 +74,44 @@ img.logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 100%;
+  margin-top: 2.5%;
+  height: 95%;
   justify-content: left;
+}
+
+div.goldspacer {
+  background-color: #ffc200;
+  height: 0.5vh;
+  width: 100%;
+}
+
+div.navbar {
+  background-color: #a691d2;
+  width: 100%;
+  height: 7.5vh;
+}
+
+div.narbarlinks {
+  height: 100%;
+}
+
+div.navbarspace {
+  height: 100%;
+  background-color: #0abe22;
+}
+
+.navbar-bg {
+  background: #a691d2;
+  padding: 10px 0;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #F5F6F3;
+}
+
+.nav-link:hover {
+  color: #ffc200;
 }
