@@ -16,15 +16,13 @@ function App() {
       <title>Kansas State Biorepository</title>
       <div class='header'>
         <header>
-          <div class="logo">
-            <img class='logo' src={hopelablogo} alt="Hope Lab logo" />
-          </div>
+          <img src={hopelablogo} alt="Hope Lab logo" />
           <div class="title">
             <text>Kansas State Biorepository</text>
           </div>
-          <div class='logo'>
-            <img class='logo' src={ksulogo} alt="KSU logo" />
-          </div>
+
+          <img src={ksulogo} alt="KSU logo" />
+
         </header>
       </div>
 
